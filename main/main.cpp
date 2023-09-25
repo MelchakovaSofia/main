@@ -1,4 +1,4 @@
-﻿#include <iostream>
+﻿﻿#include <iostream>
 using namespace std;
 
 bool isPrime(int num)
@@ -8,11 +8,11 @@ bool isPrime(int num)
     if (num % 2 == 0 || num % 3 == 0) return false;
     for (int i = 5; i * i <= num; i += 6)
     {
-        if (num % i == 0 || num % (i + 2) == 0)
-        {
-            return false;
-
-        }
+        std::cout << "Введіть число: ";
+        std::cin >> num;
+        sum += num;
+        std::cout << "Сума введених чисел: "
+            << sum << std::endl;
     }
 
     return true;
